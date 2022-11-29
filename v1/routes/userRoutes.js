@@ -5,12 +5,12 @@ const router = express.Router();
 
 router.get("/", userController.getAllUsers);
 
-router.get("/:workoutId", userController.getOneUser);
+router.get("/:userId", userController.getOneUser);
 
 router.post("/", userController.createNewUser);
 
-router.patch("/:workoutId", userController.updateOneUser);
+router.patch("/:userId", userController.updateOneUser);
 
-router.delete("/:workoutId", userController.deleteOneUser);
+router.delete("/:userId", userController.deleteOneUser);
 
 module.exports = router;
